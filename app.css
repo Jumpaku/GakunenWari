@@ -1,0 +1,93 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 48pt;
+    padding: 20px;
+}
+
+.tablestyle01 {
+    margin: 20px auto;
+    width: 90%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border: 1px solid #ccc;
+}
+
+.tablestyle01 tbody tr td {
+    width: 300px;
+    text-align:center;
+    text-justify: distribute-all-lines;
+}
+
+.tablestyle01 tbody tr td input {
+    padding:3px 10px 3px 10px;
+    width: 300px;
+    font-size: 48pt;
+    text-align: right;
+}
+
+.tablestyle02 {
+    margin: 20px auto;
+    width: 90%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border: 1px solid #ccc;
+}
+.tablestyle02 th {
+    padding: 4px;
+    text-align: center;
+    vertical-align: top;
+    color: #444;
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+.tablestyle02 td{
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+}
+
+td.c0{
+    text-align: center;
+}
+
+td.c1 {
+    text-align: center;    
+}
+
+td.c1 input {
+    width: 175px;
+    font-size: 48pt;
+    text-align: right;
+}
+
+
+td.c2 {
+    padding: 20px 60px;
+    text-align: right;
+}
+
+.execute {
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.execute button {
+    position: relative;
+	background-color: #1abc9c;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	box-shadow: 0 3px 0 #23a188;
+	
+    border-radius: 20px;
+    width:50%;
+    font-size:48pt;
+}
+
+.execute button:hover{
+    background-color: #31c8aa;
+	box-shadow: 0 3px 0 #23a188;
+}
+.execute button:active{
+    top: 3px;
+	box-shadow: none;
+}
