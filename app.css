@@ -67,6 +67,7 @@ td.c2 {
 
 .execute {
     width:100%;
+    height: 200px;
     margin: 0 auto;
     text-align: center;
 }
@@ -80,7 +81,8 @@ td.c2 {
 	
     border-radius: 20px;
     width:50%;
-    font-size:48pt;
+    height:80%;
+    font-size:86pt;
 }
 
 .execute button:hover{
