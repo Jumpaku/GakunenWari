@@ -15,8 +15,8 @@
 <body>
     <table class="tablestyle01">
         <tbody>
-            <tr><td>合計金額</td>     <td><input id="total" type="text" onfocus="selectText('total')" />円</td></tr>
-            <tr><td>学年間金額差</td> <td><input id="delta" type="text" onfocus="selectText('delta')" />円</td></tr>
+            <tr><td>合計金額</td>     <td><input id="total" type="text" onfocus="eraseText('total')" onblur="set0IfInvalid('total')" />円</td></tr>
+            <tr><td>学年間金額差</td> <td><input id="delta" type="text" onfocus="eraseText('delta')" onblur="set0IfInvalid('delta')" />円</td></tr>
         </tbody>
     </table>
     <table class="tablestyle02">

@@ -32,3 +32,7 @@ var set0IfInvalid = function (id) {
 var selectText = function(id){
     document.getElementById(id).select();
 }
+
+var eraseText = function (id) {
+    document.getElementById(id).value = "";
+}

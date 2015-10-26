@@ -14,7 +14,7 @@ var writeTable = function () {
             + String(i)
             + String("\" type=\"text\" onblur=\"set0IfInvalid(\'grade")
             + String(i)
-            + String("\')\"onfocus=\"selectText(\'grade")
+            + String("\')\"onfocus=\"eraseText(\'grade")
             + String(i)
             + String("\')\" /></td> <td class=\"c2\"><span id=\"pay")
             + String(i)
