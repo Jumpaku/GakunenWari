@@ -5,7 +5,7 @@ var mult = function (a, b) {
 }
 
 var constant = function (c) {
-    return (function (x) {
+    return (function () {
         return c;
     });
 }
