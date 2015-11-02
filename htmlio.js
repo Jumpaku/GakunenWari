@@ -1,8 +1,12 @@
-﻿/// <reference path="initialize.js">
+﻿/// <reference path="utility.js">
+/// <reference path="initialize.js">
+
+var isValidNumber = satisfiesAll(
+    _.isNumber, _.isFinite, isIn(0, 1000000000000));
 
 var readNumber = function (id) {
-    var n = parseInt(document.getElementById(id).value);
-    return _.isFinite(n) ? n : 0;
+    var n = parseInt(document.getElementById(id).value, 10);
+    return isValidNumber(n) ? n : 0;
 }
 
 var readPeople = function () {
@@ -24,7 +28,7 @@ var reset = function (id, value) {
 
 var set0IfInvalid = function (id) {
     var n = parseInt(document.getElementById(id).value);
-    if (!_.isFinite(n)) {
+    if (!isValidNumber(n)) {
         reset(id, 0);
     }
 }

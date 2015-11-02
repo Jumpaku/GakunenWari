@@ -10,6 +10,17 @@ var constant = function (c) {
     });
 }
 
-var isValidNumber = function(n){
-    return _.isNumber(n) && _.isFinite(n);
+var satisfiesAll = function () {
+    var checkers = _.toArray(arguments);
+    return function (x) {
+        return checkers.reduce(function (result, checker) {
+            return result && checker(x);
+        });
+    };
+}
+
+var isIn = function(min, max){
+    return function(x){
+        return min <= x && x <= max;
+    }
 }

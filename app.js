@@ -6,11 +6,6 @@ var executeGakinenWari = function () {
     writePays(calcPays(readPeople(), readNumber("total"), readNumber("delta")));
 }
 
-var executeWarikan = function () {
-    var pay = readNumber("total") / _.sum(readPeople());
-    writePays(indexes.map(constant(pay)));
-}
-
 window.onload = function () {
     writeTable();
     indexes.forEach(function (i) {
