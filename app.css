@@ -1,68 +1,77 @@
 ﻿body {
     font-family: 'Segoe UI', sans-serif;
-    font-size: 48pt;
-    padding: 20px;
+    font-size:36pt;
+    font-weight:100;
+    width:1280px;
+    margin:5px auto 5px auto;
 }
 
-.tablestyle01 {
-    margin: 20px auto;
-    width: 90%;
-    border-collapse: collapse;
-    border-spacing: 0px;
-    border: 1px solid #ccc;
+body > div{
+    margin:5px auto;
+    width:1000px;
 }
 
-.tablestyle01 tbody tr td {
-    width: 300px;
+.tabbuttons {
+    overflow:hidden;
+    list-style:none;
+    margin:5px auto;
+    width:300px;
+}
+.tabbuttons li {
+    background: #ccc;
+    float:left;
+    margin:5px;
+    width:75px;
     text-align:center;
-    text-justify: distribute-all-lines;
+}
+.tabbuttons li.selected {
+    background: #eee;
 }
 
-.tablestyle01 tbody tr td input {
-    padding:3px 10px 3px 10px;
-    width: 300px;
-    font-size: 48pt;
-    text-align: right;
+.tabcontents{
+    margin:5px;
+}
+.tabcontents li{
+    background:#eee;
+    list-style:none;
+    margin:5px;
+}
+.tabcontents li.hidden {
+    display:none;
 }
 
-.tablestyle02 {
-    margin: 20px auto;
+.inputtable {
+    margin: auto;
     width: 90%;
     border-collapse: collapse;
     border-spacing: 0px;
     border: 1px solid #ccc;
 }
-.tablestyle02 th {
-    padding: 4px;
+.inputtable th {
     text-align: center;
     vertical-align: top;
     color: #444;
     background-color: #eee;
     border: 1px solid #ccc;
 }
-.tablestyle02 td{
+.inputtable td {
     background-color: #fafafa;
     border: 1px solid #ccc;
 }
 
-td.c0{
-    text-align: center;
-}
-
-td.c1 {
-    text-align: center;    
-}
-
-td.c1 input {
-    width: 175px;
-    font-size: 48pt;
+.numinput {
+    margin:5px;
+    width:250px;
+    font-size: 36pt;
     text-align: right;
 }
 
-
-td.c2 {
-    padding: 20px 60px;
+.numoutput{
+    margin:5px;
+    width:250px;
+    font-size: 36pt;
     text-align: right;
+
 }
 
 .execute {
@@ -71,7 +80,6 @@ td.c2 {
     margin: 0 auto;
     text-align: center;
 }
-
 .execute button {
     position: relative;
 	background-color: #1abc9c;
@@ -84,7 +92,6 @@ td.c2 {
     height:80%;
     font-size:86pt;
 }
-
 .execute button:hover{
     background-color: #31c8aa;
 	box-shadow: 0 3px 0 #23a188;
