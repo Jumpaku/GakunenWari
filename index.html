@@ -3,6 +3,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=640px,minimum-scale=0.25">
     <title>学年割り電卓</title>
     <link rel="stylesheet" href="app.css" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
@@ -16,8 +17,7 @@
     </div>
     <div>
         <ul class="tabbuttons">
-            <li class="selected"> 差 </li>
-            <li> 比 </li>
+            <li class="selected"> 差 </li><li> 比 </li>
         </ul>
     </div>
     <div>
@@ -32,22 +32,22 @@
                             <tr>
                                 <td> 1 </td>
                                 <td><input id="dp0" class="numinput" type="text"/></td>
-                                <td><span id="da0" class="numoutput"></span></td>             
+                                <td><div id="da0" class="numoutput"></div></td>             
                             </tr>
                             <tr>
                                 <td> 2 </td>
                                 <td><input id="dp1" class="numinput" type="text" /></td>
-                                <td><span id="da1" class="numoutput"></span></td>
+                                <td><div id="da1" class="numoutput"></div></td>
                             </tr>
                             <tr>
                                 <td> 3 </td>
                                 <td><input id="dp2" class="numinput" type="text" /></td>
-                                <td><span id="da2" class="numoutput"></span></td>
+                                <td><div id="da2" class="numoutput"></div></td>
                             </tr>
                             <tr>
                                 <td> 4 </td>
                                 <td><input id="dp3" class="numinput" type="text" /></td>
-                                <td><span id="da3" class="numoutput"></span></td>
+                                <td><div id="da3" class="numoutput"></div></td>
                             </tr>
                         </tbody>
                     </table>
@@ -67,25 +67,25 @@
                                 <td> 1 </td>
                                 <td><input id="rp0" class="numinput" type="text"/></td>
                                 <td><input id="rr0" class="numinput" type="text" /></td>
-                                <td><span id="ra0" class="numoutput"></span></td>
+                                <td><div id="ra0" class="numoutput"></div></td>
                             </tr>
                             <tr>
                                 <td> 2 </td>
                                 <td><input id="rp1" class="numinput" type="text" /></td>
                                 <td><input id="rr1" class="numinput" type="text" /></td>
-                                <td><span id="ra1" class="numoutput"></span></td>
+                                <td><div id="ra1" class="numoutput"></div></td>
                             </tr>
                             <tr>
                                 <td> 3 </td>
                                 <td><input id="rp2" class="numinput" type="text" /></td>
                                 <td><input id="rr2" class="numinput" type="text" /></td>
-                                <td><span id="ra2" class="numoutput"></span></td>
+                                <td><div id="ra2" class="numoutput"></div></td>
                             </tr>
                             <tr>
                                 <td> 4 </td>
                                 <td><input id="rp3" class="numinput" type="text" /></td>
                                 <td><input id="rr3" class="numinput" type="text" /></td>
-                                <td><span id="ra3" class="numoutput"></span></td>
+                                <td><div id="ra3" class="numoutput"></div></td>
                             </tr>
                         </tbody>
                     </table>

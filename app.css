@@ -1,40 +1,49 @@
-﻿body {
-    font-family: 'Segoe UI', sans-serif;
-    font-size:36pt;
-    font-weight:100;
-    width:1280px;
-    margin:5px auto 5px auto;
+﻿*{
+    border:-5px solid #f00;
+    background:#23a188;
 }
-
+body {
+    font-family: 'Segoe UI', sans-serif;
+    font-size:32pt;
+    font-weight:100;
+    width:640px;
+    background:#fff;
+}
 body > div{
-    margin:5px auto;
-    width:1000px;
+    margin:5px 0px;
+    width:100%;
+    text-align:center;
 }
 
 .tabbuttons {
-    overflow:hidden;
-    list-style:none;
-    margin:5px auto;
-    width:300px;
+    background:#f00;
+	list-style-type: none;
+    padding-left:0px;
+    width: 90%;
+    margin: 5px auto;
+    overflow: hidden;
+    text-align: center;
 }
 .tabbuttons li {
     background: #ccc;
-    float:left;
-    margin:5px;
-    width:75px;
-    text-align:center;
+    width: 50%;   
+    margin: 0px;
+    display: inline-block;
+    text-align: center;
 }
 .tabbuttons li.selected {
     background: #eee;
 }
 
 .tabcontents{
-    margin:5px;
+    background:#10c4e5;
+    padding-left:0px;
+	list-style-type: none;
+    margin:0px;
 }
 .tabcontents li{
     background:#eee;
-    list-style:none;
-    margin:5px;
+    margin:0px;
 }
 .tabcontents li.hidden {
     display:none;
@@ -49,6 +58,7 @@ body > div{
 }
 .inputtable th {
     text-align: center;
+    font-size:18pt;
     vertical-align: top;
     color: #444;
     background-color: #eee;
@@ -57,26 +67,31 @@ body > div{
 .inputtable td {
     background-color: #fafafa;
     border: 1px solid #ccc;
+    text-align:center;
 }
 
 .numinput {
-    margin:5px;
-    width:250px;
-    font-size: 36pt;
+    margin:2px auto;
+    padding:2px;
+    width:150px;
+    font-size: 32pt;
+    font-weight:200;
     text-align: right;
 }
 
 .numoutput{
-    margin:5px;
-    width:250px;
-    font-size: 36pt;
+    margin:2px auto;
+    padding:2px;
+    width:150px;
+    font-size: 32pt;
+    font-weight:100;
     text-align: right;
 
 }
 
 .execute {
     width:100%;
-    height: 230px;
+    height: 150px;
     margin: 0 auto;
     text-align: center;
 }
@@ -87,10 +102,11 @@ body > div{
 	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
 	box-shadow: 0 3px 0 #23a188;
 	
-    border-radius: 20px;
-    width:70%;
+    border-radius: 25%;
+    width:60%;
     height:80%;
-    font-size:86pt;
+    margin:5px auto;
+    font-size:64pt;
 }
 .execute button:hover{
     background-color: #31c8aa;
