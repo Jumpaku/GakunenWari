@@ -17,5 +17,5 @@ Visit Jumpaku's blog to see detail.
 http://jumpaku.hatenablog.com/entry/2015/11/01/234108
 
 ##Contact
-Twitter Jumpaku@Jumpaku
+Twitter Jumpaku@Jumpaku  
 Blog http://jumpaku.hatenablog.com/entry/2015/11/01/234108
