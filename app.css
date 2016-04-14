@@ -1,0 +1,102 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+    font-size:36pt;
+    font-weight:100;
+    width:1280px;
+    margin:5px auto 5px auto;
+}
+
+body > div{
+    margin:5px auto;
+    width:1000px;
+}
+
+.tabbuttons {
+    overflow:hidden;
+    list-style:none;
+    margin:5px auto;
+    width:300px;
+}
+.tabbuttons li {
+    background: #ccc;
+    float:left;
+    margin:5px;
+    width:75px;
+    text-align:center;
+}
+.tabbuttons li.selected {
+    background: #eee;
+}
+
+.tabcontents{
+    margin:5px;
+}
+.tabcontents li{
+    background:#eee;
+    list-style:none;
+    margin:5px;
+}
+.tabcontents li.hidden {
+    display:none;
+}
+
+.inputtable {
+    margin: auto;
+    width: 90%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border: 1px solid #ccc;
+}
+.inputtable th {
+    text-align: center;
+    vertical-align: top;
+    color: #444;
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+.inputtable td {
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+}
+
+.numinput {
+    margin:5px;
+    width:250px;
+    font-size: 36pt;
+    text-align: right;
+}
+
+.numoutput{
+    margin:5px;
+    width:250px;
+    font-size: 36pt;
+    text-align: right;
+
+}
+
+.execute {
+    width:100%;
+    height: 230px;
+    margin: 0 auto;
+    text-align: center;
+}
+.execute button {
+    position: relative;
+	background-color: #1abc9c;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	box-shadow: 0 3px 0 #23a188;
+	
+    border-radius: 20px;
+    width:70%;
+    height:80%;
+    font-size:86pt;
+}
+.execute button:hover{
+    background-color: #31c8aa;
+	box-shadow: 0 3px 0 #23a188;
+}
+.execute button:active{
+    top: 3px;
+	box-shadow: none;
+}
