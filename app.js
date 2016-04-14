@@ -120,7 +120,8 @@ var calculateByDiff = function (participants, total, diff) {
     var min = (total - diff * sigma) / n;
 
     return is.map(function (i) {
-        return math.ceil(min + i * diff);
+        return participants[i] === 0 ?
+            0 : math.ceil(min + i * diff);
     });
 };
 
@@ -132,7 +133,8 @@ var calculateByRatio = function (participants, total, ratio) {
     }
 
     return _.range(0, 4).map(function (i) {
-        return math.ceil(ratio[i] * total / sigma);
+        return participants[i] === 0 ?
+            0 : math.ceil(ratio[i] * total / sigma);
     });
 };
 
