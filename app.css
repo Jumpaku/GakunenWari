@@ -91,6 +91,7 @@ body > div{
 }
 .numoutput{
     font-weight:100;
+    width:156px;
 }
 .numlarge{
     margin:2px 5px;
