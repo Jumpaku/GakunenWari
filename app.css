@@ -88,6 +88,7 @@ body > div{
 }
 .numinput {
     font-weight:200;
+    width:160px;
 }
 .numoutput{
     font-weight:100;
