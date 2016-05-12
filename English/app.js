@@ -62,11 +62,6 @@ function updateView() {
 }
 
 window.onload = function () {
-    var language = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
-    if(language.substr(0,2) === "en"){
-        window.location.href = "http://jumpaku.github.io/GakunenWari/English/";
-    }
-
     $(function ($) {
 
         initializeVariables();
