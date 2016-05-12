@@ -1,0 +1,126 @@
+﻿*{
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    font-size:32pt;
+    font-weight:100;
+    width:640px;
+    background:#fff;
+    margin:0px;
+    padding:0px;
+}
+div{
+    background:#fff;
+}
+body > div{
+    margin:5px auto;
+    width:95%;
+    text-align:center;
+}
+
+.tabbuttons {
+	list-style-type: none;
+    padding-left:0px;
+    width: 100%;
+    margin: 5px 0px;
+    overflow: hidden;
+    text-align: center;
+}
+.tabbuttons li {
+    background: #ddd;
+    width: 50%;
+    height: 70px;
+    margin: 0px;
+    display: inline-block;
+    text-align: center;
+    color:#bbb;
+
+}
+.tabbuttons li.selected {
+    background: #eee;
+    color:#000;
+    border:3px  3px 3px 3px solid #f00;
+}
+
+.tabcontents{
+    background:#10c4e5;
+    padding-left:0px;
+	list-style-type: none;
+    margin:0px;
+}
+.tabcontents li{
+    background:#eee;
+    margin:0px;
+    border:1px solid #ccc;
+}
+.tabcontents li.hidden {
+    display:none;
+}
+
+.inputtable {
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border: 1px solid #ccc;
+}
+.inputtable th {
+    text-align: center;
+    font-size:18pt;
+    vertical-align: top;
+    color: #444;
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+.inputtable td {
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    text-align:center;
+}
+
+.numlabel{
+    margin:2px auto;
+    padding:2px;
+    width:150px;
+    height:50px;
+    font-size: 32pt;
+    text-align: right;
+}
+.numinput {
+    font-weight:200;
+}
+.numoutput{
+    font-weight:100;
+}
+.numlarge{
+    margin:2px 5px;
+    width:175px;
+}
+
+.execute {
+    width:100%;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+}
+.execute button {
+    position: relative;
+	background-color: #1abc9c;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	box-shadow: 0 3px 0 #23a188;
+	
+    border-radius: 50px;
+    width:60%;
+    height:80%;
+    margin:5px auto;
+    font-size:46pt;
+}
+.execute button:hover{
+    background-color: #31c8aa;
+	box-shadow: 0 3px 0 #23a188;
+}
+.execute button:active{
+    top: 3px;
+	box-shadow: none;
+}
