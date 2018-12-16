@@ -1,5 +1,7 @@
 # GakunenWari
-##What's GakunenWari?
+
+## What's GakunenWari?
+
 これは学年割り電卓"GakunenWari"というWebアプリです.  
 アプリ自体は次のURLから利用する事ができます.  
 https://jumpaku.github.io/GakunenWari/   
@@ -16,6 +18,6 @@ Tell me something to fix because I'm beginner.
 Visit Jumpaku's blog to see detail.  
 http://jumpaku.hatenablog.com/entry/2015/11/01/234108
 
-##Contact
+## Contact
 Twitter Jumpaku@Jumpaku  
 Blog http://jumpaku.hatenablog.com/entry/2015/11/01/234108
