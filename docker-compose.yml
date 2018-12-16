@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+
+  init:
+    build: 
+      context: ./
+    container_name: init
+    volumes: 
+      - ./dev:/home/dev
+    command: ['npm', 'install']
+
+  build:
+    build: 
+      context: ./
+    container_name: build
+    depends_on: 
+      - 'init'
+    volumes: 
+      - ./dev:/home/dev:ro
+      - ./dev/dist:/home/dev/dist
+    command: ["./build.sh"]
+
+  debug:
+    build: 
+      context: ./
+    container_name: debug
+    command: ["npm", "run", "debug"]
+    depends_on: 
+      - 'init'
+      - 'build'
+    volumes: 
+      - ./dev:/home/dev:ro
+    ports:
+      - "8080:80"
+
