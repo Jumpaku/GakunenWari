@@ -1,0 +1,104 @@
+
+body {
+    font-size: 110%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#title {
+    /*border: solid 1px rgb(255, 0, 0);*/
+    width: 50%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: auto;
+    font-size: 200%;
+
+}
+
+.vbox_element {
+    /*border: solid 1px blue;*/
+    box-sizing: border-box;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 90%;
+    margin: auto;
+}
+
+/*#input_total label, #input_max_fraction label, #output_remainder label, #diff_parameter label {}*/
+
+input, label, output {
+    /*border: solid 1px rgb(255, 0, 0);*/
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+input {
+    width: 30%;
+}
+label {
+    width: 45%;
+}
+output {
+    text-align: right;
+    width: 35%;
+    border-bottom: solid 1px black;
+}
+
+.participants_data_row {
+    /*border: solid 1px rgb(103, 236, 236);*/
+    box-sizing: border-box;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.grade_name, .participants_count, .payment_amount {
+    /*border: solid 1px rgb(194, 151, 214);*/
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.grade_name {
+    width: 20%;
+}
+.participants_count {
+    width: 30%;
+}
+.participants_count input {
+    width: 90%;
+}
+.payment_amount {
+    width: 40%;
+}
+.payment_amount output {
+    width: 60%;
+}
+
+
+#diff_parameter_slider {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 7px;
+    background: gray;
+    border-radius: 5px;   
+    outline: none;
+    -webkit-transition: .1s;
+    transition: opacity .1s;
+}
+
+#diff_parameter_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+#diff_parameter_slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: whitesmoke;
+    cursor: pointer;
+}
+
