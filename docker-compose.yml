@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+
+  init:
+    container_name: 'init'
+    image: 'node:10.7.0-alpine'
+    volumes: 
+      - './dev:/home/dev'
+    working_dir: '/home/dev'
+    command: ['npm', 'install']
+
+  build:
+    container_name: build
+    image: 'node:10.7.0-alpine'
+    depends_on: 
+      - 'init'
+    volumes: 
+      - './dev:/home/dev:ro'
+      - './app:/home/app'
+      - './dev/dist:/home/dev/dist'
+    working_dir: "/home/dev"
+    command: ['./build.sh']
+
+  debug:
+    image: nginx:1.15.7-alpine
+    container_name: debug
+    volumes: 
+      - ./dev/dist:/usr/share/nginx/html:ro
+    ports:
+      - "8080:80"
+
