@@ -1,2 +1,6 @@
-Web.config
-Web.Debug.config
+\.DS_Store
+
+dev/node_modules/*
+dev/dist/*
+
+dev/package-lock.json

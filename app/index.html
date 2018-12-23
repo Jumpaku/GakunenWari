@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>GakunennWari</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <!--<link rel="stylesheet" href="/disablescroll.css">-->
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    <script src="bundle.js"></script>
+    <!--<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        
+        ga('create', 'UA-77155454-2', 'auto');
+        ga('send', 'pageview');
+    </script>-->
+</head>
+
+<body>
+    <header>
+        <div id="title">学年割</div>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <div id="input_total" class="vbox_element">
+                    <label id="total_label" for="total_field">合計金額</label>
+                    <input id="total_field" name="total_field" type="tel" value="0" pattern="[0-9][0-9]*">
+                </div>
+                <div id="input_max_fraction" class="vbox_element">
+                    <label id="max_fraction_label" for="max_fraction_field">切捨端数 [円]</label>
+                    <input id="max_fraction_field" name="max_fraction_field" type="tel" value="50" pattern="[0-9]*">
+                </div>
+                <div id="input_participants" class="vbox_element">
+                    <div id="participants_header" class="participants_data_row">
+                        <div id="participants_grade_header" class="grade_name">学年</div>
+                        <div id="participants_count_header" class="participants_count">人数 [人]</div>
+                        <div id="participants_payment_header" class="payment_amount">支払額 [円/人]</div>
+                    </div>
+                </div>
+                <template id="participants_data_template">
+                    <div class="participants_data_row">
+                        <div class="grade_name"></div>
+                        <div class="participants_count">
+                            <input type="tel" value="0" pattern="[0-9]*">
+                        </div>
+                        <div class="payment_amount">
+                            <output>0</output>
+                        </div>
+                    </div>
+                </template>
+                <div id="output_remainder" class="vbox_element">
+                    <label for="output_remainder_text">不足額</label>
+                    <output id="output_remainder_text" name="output_remainder_text">0</output>
+                </div>
+                <div id="diff_parameter" class="vbox_element">
+                    <label>学年間金額差</label>
+                    <output id="diff_value">0</output>
+                    <input id="diff_parameter_slider" name="diff_parameter_slider" type="range" value="0" min="0" max="25"
+                        step="1">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
