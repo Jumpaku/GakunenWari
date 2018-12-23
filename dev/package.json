@@ -2,7 +2,7 @@
   "name": "app",
   "version": "1.0.0",
   "description": "GakunennWari",
-  "main": "index.js",
+  "main": "bundle.js",
   "scripts": {
     "build": "webpack --mode=production",
     "debug": "webpack-dev-server --mode=development"
@@ -16,9 +16,5 @@
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5"
   },
-  "dependencies": {
-    "@types/jquery": "^3.3.5",
-    "jquery": "^3.3.1",
-    "pepjs": "^0.4.3"
-  }
+  "dependencies": {}
 }

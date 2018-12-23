@@ -14,6 +14,8 @@ module.exports = {
         path: path.join(__dirname,'dist'),
         filename: '[name].js'  // [name]はentryで記述した名前(この例ではbundle）が入る
     },
+    devtool: 'source-map',
+
     // モジュールとして扱いたいファイルの拡張子を指定する
     // 例えば「import Foo from './foo'」という記述に対して"foo.ts"という名前のファイルをモジュールとして探す
     // デフォルトは['.js', '.json']
