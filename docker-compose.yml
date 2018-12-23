@@ -17,9 +17,6 @@ services:
       - 'init'
     volumes: 
       - './:/home'
-      - './dev:/home/dev:ro'
-      - './dev/dist:/home/dev/dist'
-      - './app:/home/app'
     working_dir: "/home/dev"
     command: ['./build.sh']
 
