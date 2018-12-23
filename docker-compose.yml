@@ -16,9 +16,10 @@ services:
     depends_on: 
       - 'init'
     volumes: 
+      - './:/home'
       - './dev:/home/dev:ro'
-      - './app:/home/app'
       - './dev/dist:/home/dev/dist'
+      - './app:/home/app'
     working_dir: "/home/dev"
     command: ['./build.sh']
 
